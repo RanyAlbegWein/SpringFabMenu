@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.rany.albeg.wein.springfabmenudemo.ScrollingActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:toolbarId="@+id/toolbar">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_scrolling"/>
+
+    <com.rany.albeg.wein.springfabmenu.SpringFabMenu
+        android:id="@+id/sfm_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|left"
+        app:layout_behavior="@string/appbar_springfabmenu_behavior"
+        app:sfm_delay_expanding_menu_items="500"
+        app:sfm_expand_duration="1000"
+        app:sfm_expand_item_rotation_degrees="360"
+        app:sfm_menu_button_color="#6e091c"
+        app:sfm_menu_button_ripple_color="#E8EDDF">
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="#011627"
+            app:srcCompat="@drawable/ic_action_attach"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="#011627"
+            app:srcCompat="@drawable/ic_action_cloud"/>
+
+    </com.rany.albeg.wein.springfabmenu.SpringFabMenu>
+
+    <com.rany.albeg.wein.springfabmenu.SpringFabMenu
+        android:id="@+id/sfm_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|left"
+        app:layout_behavior="@string/appbar_springfabmenu_behavior"
+        app:sfm_delay_expanding_menu_items="500"
+        app:sfm_expand_duration="1000"
+        app:sfm_expand_item_rotation_degrees="360"
+        app:sfm_menu_button_color="#8b2135"
+        app:sfm_menu_button_ripple_color="#E8EDDF"
+        app:sfm_size_menu_button="mini">
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="#ECA400"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/ic_action_attach"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="#ECA400"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/ic_action_cloud"/>
+
+    </com.rany.albeg.wein.springfabmenu.SpringFabMenu>
+
+    <com.rany.albeg.wein.springfabmenu.SpringFabMenu
+        android:id="@+id/sfm_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|center"
+        app:layout_behavior="@string/appbar_springfabmenu_behavior"
+        app:sfm_delay_expanding_menu_items="500"
+        app:sfm_expand_duration="4000"
+        app:sfm_expand_item_rotation_degrees="360"
+        app:sfm_expand_menu_button_rotation_degrees="360"
+        app:sfm_menu_button_color="#094e6e"
+        app:sfm_menu_button_ripple_color="#E8EDDF"
+        app:sfm_src_icon="@drawable/ic_action_chat_bubble">
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="#D99AC5"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/ic_action_folder"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="#D99AC5"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/ic_action_share"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="#D99AC5"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/ic_action_chat"/>
+
+    </com.rany.albeg.wein.springfabmenu.SpringFabMenu>
+
+    <com.rany.albeg.wein.springfabmenu.SpringFabMenu
+        android:id="@+id/sfm_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|right"
+        app:layout_behavior="@string/appbar_springfabmenu_behavior"
+        app:sfm_delay_expanding_menu_items="300"
+        app:sfm_expand_duration="2500"
+        app:sfm_expand_item_rotation_degrees="360"
+        app:sfm_expand_menu_button_rotation_degrees="270"
+        app:sfm_menu_button_color="#1f6e09"
+        app:sfm_menu_button_ripple_color="#E8EDDF"
+        app:sfm_spacing_menu_items="10dp"
+        app:sfm_src_icon="@drawable/ic_action_edit">
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="#006992"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/ic_action_crop_original"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="#006992"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/ic_action_colorize"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="#006992"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/ic_action_crop_rotate"/>
+
+    </com.rany.albeg.wein.springfabmenu.SpringFabMenu>
+
+    <com.rany.albeg.wein.springfabmenu.SpringFabMenu
+        android:id="@+id/sfm_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="70dp"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|right"
+        app:layout_behavior="@string/appbar_springfabmenu_behavior"
+        app:sfm_delay_expanding_menu_items="300"
+        app:sfm_expand_duration="2500"
+        app:sfm_expand_item_rotation_degrees="360"
+        app:sfm_expand_menu_button_rotation_degrees="270"
+        app:sfm_menu_button_color="#096e6e"
+        app:sfm_menu_button_ripple_color="#E8EDDF"
+        app:sfm_size_menu_button="mini"
+        app:sfm_spacing_menu_items="10dp"
+        app:sfm_src_icon="@drawable/ic_action_edit">
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="#FF6B6B"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/ic_action_crop_original"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="#FF6B6B"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/ic_action_colorize"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="#FF6B6B"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/ic_action_crop_rotate"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="#FF6B6B"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/ic_action_hdr"/>
+
+    </com.rany.albeg.wein.springfabmenu.SpringFabMenu>
+
+</android.support.design.widget.CoordinatorLayout>

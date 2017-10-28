@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SpringFabMenu">
+        <attr name="sfm_src_icon" format="reference"/>
+        <attr name="sfm_size_menu_button" format="enum">
+            <enum name="normal" value="0"/>
+            <enum name="mini" value="1"/>
+        </attr>
+        <attr name="sfm_collapse_on_item_selected" format="boolean"/>
+        <attr name="sfm_expand_duration" format="integer"/>
+        <attr name="sfm_collapse_duration" format="integer"/>
+        <attr name="sfm_expand_item_rotation_degrees" format="integer"/>
+        <attr name="sfm_expand_menu_button_rotation_degrees" format="integer"/>
+        <attr name="sfm_spacing_menu_items" format="dimension"/>
+        <attr name="sfm_delay_expanding_menu_items" format="integer"/>
+        <attr name="sfm_menu_button_color" format="color"/>
+        <attr name="sfm_menu_button_ripple_color" format="color"/>
+
+    </declare-styleable>
+</resources>

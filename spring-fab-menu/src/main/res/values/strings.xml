@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SpringFabMenu</string>
+    <string name="appbar_springfabmenu_behavior">com.rany.albeg.wein.springfabmenu.SpringFabMenu$SpringFabMenuBehavior</string>
+</resources>
