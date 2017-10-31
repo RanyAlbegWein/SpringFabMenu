@@ -10,6 +10,7 @@ A menu of `FloatingActionButton` items, designed to be anchored on an `AppBarLay
 ---
 
 [ ![Download](https://api.bintray.com/packages/ranyalbegwein/maven/spring-fab-menu/images/download.svg) ](https://bintray.com/ranyalbegwein/maven/spring-fab-menu/_latestVersion)
+[![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-SpringFabMenu-green.svg?style=flat )]( https://android-arsenal.com/details/1/6384 )
 
 1. Edit your *build.gradle* to include the library and sync.
 
